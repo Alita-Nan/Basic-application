@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@Api(value = "Swagger的注解的简单使用。该注解是标注在方法上并用来描述整个控制器的工作内容。")
+@Api(tags = "Swagger的注解的简单使用。该注解是标注在方法上并用来描述整个控制器的工作内容。")
 @RestController
 @RequestMapping("basic")
 public class BasicController {
