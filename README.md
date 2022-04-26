@@ -6,18 +6,22 @@
 
 #### 如何拉取？
 
-如果有梯子的话，那么可以在CMD中执行以下指令
-`git config --global http.proxy 127.0.0.1:xxxx`
-其中，xxxx是你的梯子的端口。
+~~如果有梯子的话，那么可以在CMD中执行以下指令~~
+~~`git config --global http.proxy 127.0.0.1:xxxx`~~
+~~其中，xxxx是你的梯子的端口。~~
 
-但是这样设置有个*缺点*，当你没运行梯子时git是无法正常工作的。所以你可以按照下面的命令取消上述的全局设置
-`git config --global --unset http.proxy`
+~~但是这样设置有个*缺点*，当你没运行梯子时git是无法正常工作的。所以你可以按照下面的命令取消上述的全局设置~~
+~~`git config --global --unset http.proxy`~~
 
-#### 设置局部仓库的代理
+`git config --global http.https://github.com.proxy http://127.0.0.1:port`
 
-你可以用以下指令来指定某个项目的git代理（注意：该文件夹下必须有git文件）
-`git config --local http.proxy 127.0.0.1:xxxx`
-其中，xxxx是你的梯子的端口。
+上面的命令表示一切与github关联的git操作都会走代理
+
+#### ~~设置局部仓库的代理~~
+
+~~你可以用以下指令来指定某个项目的git代理（注意：该文件夹下必须有git文件）~~
+~~`git config --local http.proxy 127.0.0.1:xxxx`~~
+~~其中，xxxx是你的梯子的端口。~~
 
 #### 软件架构
 
